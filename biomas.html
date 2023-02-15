@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/icon.png"/>
+    <link rel="stylesheet" href="styles/style.css"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Bioteca</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <input type="image" src="images/logojuanjo.png"  width="150" height="150" class="logo2" alt="Logo" onclick="window.location.href='Bioteca.html'">
+        </div>
+        <div class="botones">
+            <button type="button" class="elemento" onclick="window.location.href='flores.html'"><span>Flores</span></button>
+            <button type="button" class="elemento" onclick="window.location.href='biomas.html'"><span>Biomas</span></button>  
+            <button type="button" class="elemento" onclick="window.location.href='acercade.html'"><span>Acerca de</span></button>
+        </div>
+    </header>
+    <div class="botonesoff">
+        <div class="alert alert-warning" role="alert">
+            Estás en la página de Biomas de la Bioteca, puedes hacer click en las fotos de los biomas para leer su información y descubrir su fauna.
+        </div>
+        <a id="bosque" class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasbosque" role="button" aria-controls="offcanvasExample">
+            <img src="images/bosque.png" alt="bosque">
+          </a>
+        <a id="desierto" class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasdesierto" role="button" aria-controls="offcanvasExample">
+            <img src="images/desierto.png" alt="desierto">
+          </a>
+          <a id="taiga" class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvastaiga" role="button" aria-controls="offcanvasExample">
+            <img src="images/taiga.png" alt="taiga">
+          </a>
+          <br/>
+          <a id="montaña" class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasmontaña" role="button" aria-controls="offcanvasExample">
+            <img src="images/montaña.png" alt="montaña">
+          </a>
+          <a id="campo" class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvascampo" role="button" aria-controls="offcanvasExample">
+            <img src="images/campo.png" alt="campo">
+          </a>
+          
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasbosque" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="titulo1">Bosque</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div class="textobiomas">
+                Los bosques son ecosistemas complejos y diversos que cubren una gran parte de la superficie terrestre. <hr/> Están compuestos por árboles, arbustos, hierbas, animales y microorganismos, y proporcionan muchos beneficios a la humanidad, como oxígeno, madera y otros recursos naturales.<hr/>
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown">
+                    Fauna
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="https://es.wikipedia.org/wiki/Ursidae">Oso</a></li>
+                    <li><a class="dropdown-item" href="https://es.wikipedia.org/wiki/Cervus_elaphus">Ciervo</a></li>
+                    <li><a class="dropdown-item" href="https://es.wikipedia.org/wiki/Vulpini">Zorro</a></li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasdesierto" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="titulo2">Desierto</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div class="textobiomas">
+                Los desiertos son áreas áridas y secas que cubren gran parte de la superficie terrestre.<hr/> Están compuestos por arena, rocas y otros materiales, y tienen muy poca vegetación y agua. Los desiertos pueden ser extremadamente calurosos durante el día y muy fríos durante la noche.<hr/>
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown">
+                    Fauna
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="https://es.wikipedia.org/wiki/Camelus">Camello</a></li>
+                    <li><a class="dropdown-item" href="https://es.wikipedia.org/wiki/Scorpiones">Escorpión</a></li>
+                    <li><a class="dropdown-item" href="https://es.wikipedia.org/wiki/Vulpes_zerda">Zorro del desierto</a></li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvastaiga" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="titulo3">Taiga</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div class="textobiomas">
+                La taiga, también conocida como bosque boreal, es un bioma forestal que se encuentra en regiones frías y subárticas del hemisferio norte.<hr/> Está compuesta principalmente por coníferas y tiene una gran cantidad de animales, como osos, alces y lobos. La taiga es importante para la producción de madera y papel.
+                <hr/>
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown">
+                    Fauna
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="https://es.wikipedia.org/wiki/Ursus_arctos">Oso pardo</a></li>
+                    <li><a class="dropdown-item" href="https://es.wikipedia.org/wiki/Lynx_lynx">Lince Boreal</a></li>
+                    <li><a class="dropdown-item" href="https://es.wikipedia.org/wiki/Alces_alces">Alce</a></li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasmontaña" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="titulo4">Montaña</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div class="textobiomas">
+                Las montañas son formaciones geológicas que se elevan por encima de la superficie terrestre y tienen picos nevados, gargantas profundas y pendientes empinadas.<hr/> Las montañas albergan una gran cantidad de vida silvestre y proporcionan muchos recursos naturales, como agua dulce y minerales.<hr/>
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton4" data-bs-toggle="dropdown">
+                    Fauna
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="https://es.wikipedia.org/wiki/Capra_aegagrus_hircus">Cabra</a></li>
+                    <li><a class="dropdown-item" href="https://es.wikipedia.org/wiki/Puma_concolor">Puma</a></li>
+                    <li><a class="dropdown-item" href="https://es.wikipedia.org/wiki/Marmota">Marmota</a></li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvascampo" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="titulo5">Campo</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div class="textobiomas">
+                Los campos son biomas abiertos y planos que están compuestos por pastizales, matorrales y otros tipos de vegetación.<hr/> Los campos pueden ser utilizados para la agricultura y la ganadería, y son el hogar de una gran variedad de animales, como bisontes, ciervos y aves migratorias.<hr/>
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton5" data-bs-toggle="dropdown">
+                    Fauna
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="https://es.wikipedia.org/wiki/Liebre">Liebre</a></li>
+                    <li><a class="dropdown-item" href="https://es.wikipedia.org/wiki/Mustela_nivalis">Comadreja</a></li>
+                    <li><a class="dropdown-item" href="https://es.wikipedia.org/wiki/Bos_taurus">Vaca</a></li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+          
+    </div>
+    <footer>
+        <div class="barra">
+            <br/>
+        </div>
+        <div class="footer-content">
+            <p>Juan José Rollán Palomo</p>
+            <p>juanrolpal05@gmail.com</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
